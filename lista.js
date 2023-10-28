@@ -60,3 +60,11 @@ function recarregarTarefas() {
 
 recarregarTarefas();
 button.addEventListener('click', adicionarNovaTarefa);
+
+button.addEventListener('click', adicionarNovaTarefa);
+
+input.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        adicionarNovaTarefa();
+    }
+});
